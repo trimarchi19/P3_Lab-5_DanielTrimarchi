@@ -3,9 +3,10 @@
 #include <iostream>
 using namespace std;
 
-	Plato::Plato(string pRes,int pPrecio){
+	Plato::Plato(string pRes,int pPrecio,string pNom){
 		resena=pRes;
 		precio=pPrecio;
+		nombre=pNom;
 		}
 
 		void Plato::setSabor(int psabor){
@@ -20,8 +21,19 @@ using namespace std;
 		string Plato::getResena(){
 			return resena;
 		};
-		void Plato::setIngrediente(Ingrediente i){
-			//ing.push_back
+
+
+		void Plato::setNombre(string pNom){
+			nombre=pNom;
+		};
+		string Plato::getNombre(){
+			return nombre;
+		};
+
+
+
+		void Plato::setIngrediente(Ingrediente* i){
+			ing.push_back(i);
 		};
 		Ingrediente* Plato::getIngrediente(int i){
 			return ing[i];

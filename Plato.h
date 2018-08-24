@@ -8,13 +8,13 @@ using namespace std;
 class Plato{
 
 	private:
-		string resena;
+		string resena,nombre;
 		int sabor=0,cocinado=0,precio,valoracion=5;
 		vector<Ingrediente*> ing;
 
 	public:
 		Plato();
-		Plato(string,int);
+		Plato(string,int,string);
 		void setSabor(int);
 		int getSabor();
 
@@ -27,7 +27,11 @@ class Plato{
 
 		void setResena(string);
 		string getResena();
-		void setIngrediente(Ingrediente);
+
+		void setNombre(string);
+		string getNombre();
+
+		void setIngrediente(Ingrediente*);
 		Ingrediente* getIngrediente(int);
 		vector<Ingrediente*> getIngredientes();
 
