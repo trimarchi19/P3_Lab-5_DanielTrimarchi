@@ -149,8 +149,8 @@ void registrar(vector<Plato*>& menu,int& dinero,vector<string>& client){
 	//para mostarr que compro el cliente cuanto gasto y todo eso
 		string retValue;
 	stringstream strStream;
-	strStream<<cliente<<" - Valoracion: "
-		<<valoracion<<" -Plato: "<<menu[resp]->getNombre()<<endl;
+	strStream<<cliente<<"--Valoracion: "
+		<<valoracion<<"--Plato: "<<menu[resp]->getNombre()<<endl;
 		strStream>>retValue;
 	client.push_back(retValue);
 
