@@ -36,3 +36,15 @@ Ingrediente::Ingrediente(int pCant,int pDur,string pNom,string pTipo){
 	void Ingrediente::setNombre(string pNom){
 		nombre=pNom;
 	};
+	int Ingrediente::getUsados(){
+		return usados;
+	}
+	void Ingrediente::setUsados(int pUs){
+		usados=pUs;
+	}
+	int Ingrediente::getLlenado(){
+		return llenado;
+	}
+	void Ingrediente::setLlenado(int pUs){
+		llenado=pUs;
+	}

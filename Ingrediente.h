@@ -11,8 +11,13 @@ class Ingrediente{
 private:
 
 	string tipo,nombre;
-	int cant,duracion;
+	int cant,duracion,usados=0,llenado=0;
 public:
+	int getUsados();
+	void setUsados(int);
+
+int getLlenado();
+	void setLlenado(int);
 
 	int getCant();
 	void setCant(int);
